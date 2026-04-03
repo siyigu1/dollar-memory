@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>In Loving Memory</title>
+  <meta name="description" content="A memorial tribute to a beloved companion." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon (paw emoji as SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+</head>
+<body>
+  <!-- Dynamic background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Dollar sleeping on the couch -->
+  <div id="dollar-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="#/" data-i18n="nav.home">Home</a>
+    <a href="#/bio" data-i18n="nav.bio">Life & Memories</a>
+    <a href="#/letters" data-i18n="nav.letters">Letters</a>
+    <a href="#/about" data-i18n="nav.about">About</a>
+    <div class="nav-controls">
+      <button id="zen-btn" class="nav-btn" data-i18n="nav.zen" title="Be with Dollar">Be with Dollar</button>
+      <button id="lang-btn" class="nav-btn">中文</button>
+    </div>
+  </nav>
+
+  <!-- App mount point -->
+  <main id="app"></main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <img src="" alt="Photo" />
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="paw">&#x1F43E;</div>
+    <p data-i18n="footer.text">Made with love. Forever remembered.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/i18n.js"></script>
+  <script src="js/backend.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/dollar.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
